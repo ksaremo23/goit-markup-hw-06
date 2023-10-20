@@ -351,13 +351,74 @@
                 </ul>
 
             </div>
+            <div>
+                <form class="user-subscription">
+                    <p class="user-subscription-title">Subscribe</p>
+                    <label class="user-subscription-email">
+                        <input type="text" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="user-subscription-submit">
+                        Subscribe
+                        <svg>
+                            <use href="images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
     <div class="modal is-hidden" data-modal>
         <div class="modal-content">
+            <h2 class="user-contact-heading">Leave your information and we'll call you back</h2>
+
+            <form class="user-contact">
+                <label class="user-contact-field">
+                    <span class="user-contact-label">Name</span>
+                    <input type="text" placeholder="Full Name" name="full_name" required>
+                    <svg class="user-contact-field-icon">
+                        <use href="images/icons.svg#icon-name"></use>
+                    </svg>
+                </label>
+
+                <label class="user-contact-field">
+                    <span class="user-contact-label">Telephone</span>
+                    <input type="tel" name="phone">
+                    <svg class="user-contact-field-icon">
+                        <use href="images/icons.svg#icon-phone"></use>
+                    </svg>
+                </label>
+
+                <label class="user-contact-field">
+                    <span class="user-contact-label">E-mail</span>
+                    <input type="email" name="email">
+                    <svg class="user-contact-field-icon">
+                        <use href="images/icons.svg#icon-email"></use>
+                    </svg>
+                </label>
+
+                <label class="user-contact-field user-contact-comment">
+                    <span class="user-contact-label">Comments</span>
+                    <textarea name="comments" rows="10" placeholder="Enter the text"></textarea>
+                </label>
+
+                <label class="user-contact-checkbox user-contact-field">
+                    <input type="checkbox" name="agree">
+                    <svg class="user-contact-field-checkmark">
+                        <use href="images/icons.svg#icon-checkmark"></use>
+                    </svg>
+                    I agree with the newsletter and accept the Terms and Conditions
+                </label>
+
+                <button class="user-contact-submit" type="submit">
+                    Send
+                </button>
+            </form>
+
             <button class="modal-close" data-modal-close>
-                <img src="./images/close.svg" alt="">
+                <svg class="user-field-contact-icon">
+                    <use href="images/icons.svg#icon-close"></use>
+                </svg>
             </button>
         </div>
     </div>
